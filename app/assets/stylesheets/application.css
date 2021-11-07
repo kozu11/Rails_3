@@ -13,3 +13,84 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, h1, nav, .list-comment {
+  font-family: Kaushan Script, cursive, sans-serif;
+}
+
+header {
+  width: 90%;
+  border-top: 5px solid #000;
+  text-align: center;
+  padding: 15px 0;
+  margin: 30px auto 0;
+}
+
+header .headline {
+  font-size: 32px;
+}
+
+nav {
+  width: 880px;
+  margin: 0 auto;
+  border-top: 0.7px solid black;
+  border-bottom: 0.7px solid black;
+}
+
+.nav-list {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.nav-list-item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+main {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-box {
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+}
+
+.list-comment {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.list-body {
+  color: gray;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-title {
+  font-size: 18px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
